@@ -4,7 +4,7 @@ Lab Name: Create and Manage Cloud Resources: Challenge Lab (GSP313)
 Task 1: Create a project jumphost instance
 Run command:
 
-gcloud compute instances create nucleus-jumphost \
+gcloud compute instances create <FILL IN INSTANCE NAME> \
           --network nucleus-vpc \
           --zone us-east1-b  \
           --machine-type f1-micro  \
@@ -29,7 +29,7 @@ kubectl create deployment hello-server \
 
 kubectl expose deployment hello-server \
           --type=LoadBalancer \
-          --port 8080
+          --port <FILL IN PORT NUMBER>
 
 Task 3: Set up an HTTP load balancer
 Run command:
